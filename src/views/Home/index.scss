@@ -1,1 +1,10 @@
 @use '../../sass/variables' as *;
+
+.container {
+  &__h1 {
+    text-align: center;
+    color: white;
+    margin: 3rem;
+    font-size: 2rem;
+  }
+}
