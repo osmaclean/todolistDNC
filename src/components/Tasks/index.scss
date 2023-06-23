@@ -9,7 +9,7 @@
 table.tftable {
   font-size:12px;
   color:#fbfbfb;
-  width:50%;
+  width:30%;
   border: none;
   display: flex;
   flex-direction: column;
@@ -108,4 +108,566 @@ table.tftable {
       }
     }
   }  
+}
+
+@media (max-width: 1880px) {
+  .containerTable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  table.tftable {
+    font-size:12px;
+    color:#fbfbfb;
+    width:40%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .tr {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      margin: 1.5rem 0rem 1.5rem 0rem;
+      &__td {
+        width: 20%;
+      }
+      &__tdNew {
+        width: 24%;
+        font-style: italic;
+      }
+      .add {
+        position: absolute;
+        right: 35px;
+        padding: 0;
+        width: 2%;
+      }
+    }
+    tr {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:nth-child(1) {
+        border-bottom: 2px solid white;
+      }
+      .add {
+        font-size: 2rem;
+        cursor: pointer;
+        transition: 500ms ease;
+        width: 3rem;
+        &:hover {
+          transition: 500ms ease;
+          transform: scale(2);
+          opacity: 50%;  
+        }
+      }
+      th {
+        font-size: 1.3rem;
+        padding: 1rem;
+        text-align:left;
+        font-weight: 500;
+      }
+      td {
+        width: 6rem;
+        font-size: 12px;
+        padding: 12px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+        align-items: center;
+        input[type='checkbox'] {
+          all: unset;
+          border: 2px solid white;
+          border-radius: 5px;
+          height: 1.15rem;
+            width: 1.2rem;
+          transition: 500ms ease;
+          background: transparent;
+          cursor: pointer;
+          &:checked {
+            background-image: url('../../assets/check.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid #2d2d2d;
+            height: 1.17rem;
+            width: 1.2rem;
+            &:hover {
+              transition: 500ms ease;
+              border: 2px solid #2d2d2d;
+            }
+          }
+          &:hover {
+            transition: 500ms ease;
+            border: 2px solid $color-header;
+          }
+        }
+        img {
+          cursor: pointer;
+          width: 16px;
+          height: 16px;
+          transition: 700ms ease;
+          &:hover {
+            transition: 700ms ease;
+            transform: scale(1.2);
+            opacity: 50%;
+          }
+        }
+      }
+    }  
+  }
+}
+
+
+@media (max-width: 1440px) {
+  .containerTable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  table.tftable {
+    font-size:12px;
+    color:#fbfbfb;
+    width: 50%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .tr {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      margin: 1.5rem 0rem 1.5rem 0rem;
+      &__td {
+        width: 20%;
+      }
+      &__tdNew {
+        width: 24%;
+        font-style: italic;
+      }
+      .add {
+        position: absolute;
+        right: 35px;
+        padding: 0;
+        width: 2%;
+      }
+    }
+    tr {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:nth-child(1) {
+        border-bottom: 2px solid white;
+      }
+      .add {
+        font-size: 2rem;
+        cursor: pointer;
+        transition: 500ms ease;
+        width: 3rem;
+        &:hover {
+          transition: 500ms ease;
+          transform: scale(2);
+          opacity: 50%;  
+        }
+      }
+      th {
+        font-size: 1.3rem;
+        padding: 1rem;
+        text-align:left;
+        font-weight: 500;
+      }
+      td {
+        width: 6rem;
+        font-size: 12px;
+        padding: 12px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+        align-items: center;
+        input[type='checkbox'] {
+          all: unset;
+          border: 2px solid white;
+          border-radius: 5px;
+          height: 1.15rem;
+            width: 1.2rem;
+          transition: 500ms ease;
+          background: transparent;
+          cursor: pointer;
+          &:checked {
+            background-image: url('../../assets/check.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid #2d2d2d;
+            height: 1.17rem;
+            width: 1.2rem;
+            &:hover {
+              transition: 500ms ease;
+              border: 2px solid #2d2d2d;
+            }
+          }
+          &:hover {
+            transition: 500ms ease;
+            border: 2px solid $color-header;
+          }
+        }
+        img {
+          cursor: pointer;
+          width: 16px;
+          height: 16px;
+          transition: 700ms ease;
+          &:hover {
+            transition: 700ms ease;
+            transform: scale(1.2);
+            opacity: 50%;
+          }
+        }
+      }
+    }  
+  }
+}
+
+@media (max-width: 1160px) {
+  .containerTable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  table.tftable {
+    font-size:12px;
+    color:#fbfbfb;
+    width: 70%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .tr {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      margin: 1.5rem 0rem 1.5rem 0rem;
+      &__td {
+        width: 20%;
+      }
+      &__tdNew {
+        width: 24%;
+        font-style: italic;
+      }
+      .add {
+        position: absolute;
+        right: 35px;
+        padding: 0;
+        width: 2%;
+      }
+    }
+    tr {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:nth-child(1) {
+        border-bottom: 2px solid white;
+      }
+      .add {
+        font-size: 2rem;
+        cursor: pointer;
+        transition: 500ms ease;
+        width: 3rem;
+        &:hover {
+          transition: 500ms ease;
+          transform: scale(2);
+          opacity: 50%;  
+        }
+      }
+      th {
+        font-size: 1.3rem;
+        padding: 1rem;
+        text-align:left;
+        font-weight: 500;
+      }
+      td {
+        width: 6rem;
+        font-size: 12px;
+        padding: 12px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+        align-items: center;
+        input[type='checkbox'] {
+          all: unset;
+          border: 2px solid white;
+          border-radius: 5px;
+          height: 1.15rem;
+            width: 1.2rem;
+          transition: 500ms ease;
+          background: transparent;
+          cursor: pointer;
+          &:checked {
+            background-image: url('../../assets/check.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid #2d2d2d;
+            height: 1.17rem;
+            width: 1.2rem;
+            &:hover {
+              transition: 500ms ease;
+              border: 2px solid #2d2d2d;
+            }
+          }
+          &:hover {
+            transition: 500ms ease;
+            border: 2px solid $color-header;
+          }
+        }
+        img {
+          cursor: pointer;
+          width: 16px;
+          height: 16px;
+          transition: 700ms ease;
+          &:hover {
+            transition: 700ms ease;
+            transform: scale(1.2);
+            opacity: 50%;
+          }
+        }
+      }
+    }  
+  }
+}
+
+
+@media (max-width: 700px) {
+  .containerTable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  table.tftable {
+    font-size:12px;
+    color:#fbfbfb;
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .tr {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      margin: 1.5rem 0rem 1.5rem 0rem;
+      &__td {
+        width: 20%;
+      }
+      &__tdNew {
+        width: 24%;
+        font-style: italic;
+      }
+      .add {
+        position: absolute;
+        right: 35px;
+        padding: 0;
+        width: 2%;
+      }
+    }
+    tr {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:nth-child(1) {
+        border-bottom: 2px solid white;
+      }
+      .add {
+        font-size: 2rem;
+        cursor: pointer;
+        transition: 500ms ease;
+        width: 3rem;
+        &:hover {
+          transition: 500ms ease;
+          transform: scale(2);
+          opacity: 50%;  
+        }
+      }
+      th {
+        font-size: 1.3rem;
+        padding: 1rem;
+        text-align:left;
+        font-weight: 500;
+      }
+      td {
+        width: 6rem;
+        font-size: 12px;
+        padding: 12px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+        align-items: center;
+        input[type='checkbox'] {
+          all: unset;
+          border: 2px solid white;
+          border-radius: 5px;
+          height: 1.15rem;
+            width: 1.2rem;
+          transition: 500ms ease;
+          background: transparent;
+          cursor: pointer;
+          &:checked {
+            background-image: url('../../assets/check.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid #2d2d2d;
+            height: 1.17rem;
+            width: 1.2rem;
+            &:hover {
+              transition: 500ms ease;
+              border: 2px solid #2d2d2d;
+            }
+          }
+          &:hover {
+            transition: 500ms ease;
+            border: 2px solid $color-header;
+          }
+        }
+        img {
+          cursor: pointer;
+          width: 16px;
+          height: 16px;
+          transition: 700ms ease;
+          &:hover {
+            transition: 700ms ease;
+            transform: scale(1.2);
+            opacity: 50%;
+          }
+        }
+      }
+    }  
+  }
+}
+
+@media (max-width: 490px) {
+  .containerTable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  table.tftable {
+    font-size:12px;
+    color:#fbfbfb;
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .tr {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      margin: 1.5rem 0rem 1.5rem 0rem;
+      &__td {
+        width: 20%;
+      }
+      &__tdNew {
+        width: 24%;
+        font-style: italic;
+      }
+      .add {
+        position: absolute;
+        right: 35px;
+        padding: 0;
+        width: 2%;
+      }
+    }
+    tr {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:nth-child(1) {
+        border-bottom: 2px solid white;
+      }
+      .add {
+        font-size: 2rem;
+        cursor: pointer;
+        transition: 500ms ease;
+        width: 3rem;
+        &:hover {
+          transition: 500ms ease;
+          transform: scale(2);
+          opacity: 50%;  
+        }
+      }
+      th {
+        font-size: 1.3rem;
+        padding: 1rem;
+        text-align:left;
+        font-weight: 500;
+      }
+      td {
+        width: 5rem;
+        font-size: 12px;
+        padding: 12px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+        align-items: center;
+        input[type='checkbox'] {
+          all: unset;
+          border: 2px solid white;
+          border-radius: 5px;
+          height: 1.15rem;
+            width: 1.2rem;
+          transition: 500ms ease;
+          background: transparent;
+          cursor: pointer;
+          &:checked {
+            background-image: url('../../assets/check.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 2px solid #2d2d2d;
+            height: 1.17rem;
+            width: 1.2rem;
+            &:hover {
+              transition: 500ms ease;
+              border: 2px solid #2d2d2d;
+            }
+          }
+          &:hover {
+            transition: 500ms ease;
+            border: 2px solid $color-header;
+          }
+        }
+        img {
+          cursor: pointer;
+          width: 16px;
+          height: 16px;
+          transition: 700ms ease;
+          &:hover {
+            transition: 700ms ease;
+            transform: scale(1.2);
+            opacity: 50%;
+          }
+        }
+      }
+    }  
+  }
 }
