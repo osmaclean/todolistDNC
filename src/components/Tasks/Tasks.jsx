@@ -27,7 +27,7 @@ export default function Tasks({ data }) {
           <tr key={obj.id}>
             <td className="tr__td">{obj.title}</td>
             <td className="check">
-              <input type="checkbox" />
+              <input type="checkbox" checked={obj.completed} />
             </td>
             <td>
               <img onClick={() => setShowModalEdit(true)} src={pencil}></img>
