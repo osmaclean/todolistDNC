@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function Tasks({ data }) {
   const [showModalEdit, setShowModalEdit] = useState(false);
   const [showModalTrash, setShowModalTrash] = useState(false);
-  const [showModalNew, setShowModalNew] = useState(false);
+  // const [showModalNew, setShowModalNew] = useState(false);
   const [selectedTitle, setSelectedTitle] = useState("");
   const [selectedDescription, setSelectedDescription] = useState("");
 
@@ -27,8 +27,8 @@ export default function Tasks({ data }) {
         id="tfhover"
         className="tftable"
         style={{
-          display:
-            showModalEdit || showModalNew || showModalTrash ? "none" : "table",
+          display: showModalEdit || showModalTrash ? "none" : "table",
+          // showModalEdit || showModalNew || showModalTrash ? "none" : "table",
         }}
       >
         <tr>
@@ -56,8 +56,8 @@ export default function Tasks({ data }) {
         ))}
         <tr className="tr">
           <td className="tr__tdNew">Nova Tarefa...</td>
-          <td className="add" onClick={() => setShowModalNew(true)}>
-            +
+          <td className="add">
+            {/* <td className="add" onClick={() => setShowModalNew(true)}> */}+
           </td>
         </tr>
       </table>
@@ -101,7 +101,7 @@ export default function Tasks({ data }) {
           </div>
         </div>
       )}
-      {showModalNew && (
+      {/* {showModalNew && (
         <div className="modal__containerNew">
           <div className="modal__containerNew__content">
             <div
@@ -122,7 +122,7 @@ export default function Tasks({ data }) {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
