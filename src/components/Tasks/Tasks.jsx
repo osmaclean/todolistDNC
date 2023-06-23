@@ -7,6 +7,19 @@ export default function Tasks({ data }) {
   const [showModalEdit, setShowModalEdit] = useState(false);
   const [showModalTrash, setShowModalTrash] = useState(false);
   const [showModalNew, setShowModalNew] = useState(false);
+  const [selectedTitle, setSelectedTitle] = useState("");
+  const [selectedDescription, setSelectedDescription] = useState("");
+
+  const openModalEdit = (title, description) => {
+    setSelectedTitle(title);
+    setSelectedDescription(description);
+    setShowModalEdit(true);
+  };
+  const openModalTrash = (title, description) => {
+    setSelectedTitle(title);
+    setSelectedDescription(description);
+    setShowModalTrash(true);
+  };
 
   return (
     <div className="containerTable">
@@ -30,8 +43,14 @@ export default function Tasks({ data }) {
               <input type="checkbox" checked={obj.completed} />
             </td>
             <td>
-              <img onClick={() => setShowModalEdit(true)} src={pencil}></img>
-              <img onClick={() => setShowModalTrash(true)} src={trash}></img>
+              <img
+                onClick={() => openModalEdit(obj.title, obj.description)}
+                src={pencil}
+              ></img>
+              <img
+                onClick={() => openModalTrash(obj.title, obj.description)}
+                src={trash}
+              ></img>
             </td>
           </tr>
         ))}
@@ -51,7 +70,8 @@ export default function Tasks({ data }) {
             >
               <h2>X</h2>
             </div>
-            <h1>Deseja editar esse item?</h1>
+            <h1>{`Deseja editar o item "${selectedTitle}"?`}</h1>
+            <span>{selectedDescription}</span>
             <div className="modal__container__content__buttons">
               <button className="no" onClick={() => setShowModalEdit(false)}>
                 Não
@@ -70,7 +90,8 @@ export default function Tasks({ data }) {
             >
               <h2>X</h2>
             </div>
-            <h1>Deseja excluir esse item?</h1>
+            <h1>{`Deseja excluir o item "${selectedTitle}"?`}</h1>
+            <span>{selectedDescription}</span>
             <div className="modal__container__content__buttons">
               <button className="no" onClick={() => setShowModalTrash(false)}>
                 Não
