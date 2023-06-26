@@ -5,6 +5,8 @@ import Home from "./views/Home/Home";
 import { DB } from "./mock/tasks.mock";
 import "./index.scss";
 
+/* VERSÃO ANTIGA */
+
 const router = createBrowserRouter([
   {
     path: "/",
