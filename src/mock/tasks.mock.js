@@ -59,4 +59,34 @@ export const DB = [
     description: "Fazer algumas compras no shopping",
     completed: true,
   },
+  {
+    id: 11,
+    title: "Investir",
+    description: "Investir 10K até 2024",
+    completed: false,
+  },
+  {
+    id: 12,
+    title: "Portfólio",
+    description: "Desenvolver portfólio pessoal",
+    completed: true,
+  },
+  {
+    id: 13,
+    title: "Doações",
+    description: "Realizar doações à quem precisa",
+    completed: true,
+  },
+  {
+    id: 14,
+    title: "Diversão",
+    description: "Sair 1 vez por mês com meus amigos",
+    completed: false,
+  },
+  {
+    id: 15,
+    title: "Filhos",
+    description: "Ter tempo de qualidade com meus filhos",
+    completed: true,
+  },
 ];
