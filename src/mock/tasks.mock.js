@@ -38,7 +38,7 @@ export const DB = [
   {
     id: 7,
     title: "Almoçar",
-    description: "Preparar a comida para a janta",
+    description: "Preparar a comida para o almoço",
     completed: false,
   },
   {
@@ -57,6 +57,48 @@ export const DB = [
     id: 10,
     title: "shopping",
     description: "Fazer algumas compras no shopping",
+    completed: true,
+  },
+  {
+    id: 11,
+    title: "Investir",
+    description: "Investir 10K até 2024",
+    completed: false,
+  },
+  {
+    id: 12,
+    title: "Portfólio",
+    description: "Desenvolver portfólio pessoal",
+    completed: true,
+  },
+  {
+    id: 13,
+    title: "Doações",
+    description: "Realizar doações à quem precisa",
+    completed: true,
+  },
+  {
+    id: 14,
+    title: "Diversão",
+    description: "Sair 1 vez por mês com meus amigos",
+    completed: false,
+  },
+  {
+    id: 15,
+    title: "Filhos",
+    description: "Ter tempo de qualidade com meus filhos",
+    completed: true,
+  },
+  {
+    id: 16,
+    title: "Jantar",
+    description: "Preparar a comida para o jantar",
+    completed: false,
+  },
+  {
+    id: 16,
+    title: "Amigos",
+    description: "Criar novas amizades",
     completed: true,
   },
 ];
