@@ -38,7 +38,7 @@ export const DB = [
   {
     id: 7,
     title: "Almoçar",
-    description: "Preparar a comida para a janta",
+    description: "Preparar a comida para o almoço",
     completed: false,
   },
   {
@@ -87,6 +87,18 @@ export const DB = [
     id: 15,
     title: "Filhos",
     description: "Ter tempo de qualidade com meus filhos",
+    completed: true,
+  },
+  {
+    id: 16,
+    title: "Jantar",
+    description: "Preparar a comida para o jantar",
+    completed: false,
+  },
+  {
+    id: 16,
+    title: "Amigos",
+    description: "Criar novas amizades",
     completed: true,
   },
 ];
