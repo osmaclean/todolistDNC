@@ -43,6 +43,14 @@ Modo Mobile 📲
 
 Funcionalidade via React.js. Utilizando conceitos como Hooks, Rotas (React Router), Componentes, Renderização condicional e props. 
 
+## Versão 1.0.0
+
+Possui dois modais (Edição e Exclusão), 10 tarefas e 2 sessões no menu de navegação.
+
+## Versão 1.1.0
+
+Possui três modais (Edição, Exclusão e Adicionar nova tarefa), 16 tarefas e 3 sessões no menu de navegação.
+
 <hr>
 
 ## Deployment ☁
